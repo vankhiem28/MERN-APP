@@ -9,9 +9,9 @@ import auth from "./middleware/auth.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
 
 // use middleware
+app.use(cors());
 app.use(auth);
 
 // body-parser
